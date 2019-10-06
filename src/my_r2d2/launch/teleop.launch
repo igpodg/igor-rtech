@@ -1,0 +1,5 @@
+<launch>
+  <remap from="cmd_vel" to="turtle1/cmd_vel"/>
+  <node name="fake_r2d2_controller" pkg="r2d2_navigator" type="fake_r2d2_controller"/>
+  <node name="turtle_teleop_key" pkg="turtlesim" type="turtle_teleop_key"/>
+</launch>
