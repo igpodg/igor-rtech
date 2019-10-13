@@ -260,6 +260,15 @@
     <origin xyz="-${boxlen/2} 0 0"/>
   </joint>
 
+  <link name="eye">
+  </link>
+
+  <joint name="toeye" type="fixed">
+    <parent link="lense"/>
+    <child link="eye"/>
+    <origin rpy="-${pi/2} 0 -${pi/2}" xyz="0 0 0"/>
+  </joint>
+
   <link name="base_footprint">
   </link>
 
